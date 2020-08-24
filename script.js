@@ -57,6 +57,31 @@ navbar.addEventListener('dblclick', function(){
 
 link.remove();
 
+});
 
-} );
 
+//Fonctionnalité 6 :
+
+
+var card = document.querySelectorAll(".box-shadow");
+var view = document.querySelectorAll(".btn-success");
+var text = document.querySelectorAll(".card-text")
+
+view[0].addEventListener("mouseover", () => {text[0].style.display = "none"; card[0].style.width = "20%";});
+view[0].addEventListener("mouseout", () => {text[0].style.display = "block";});
+
+
+
+//Fonctionnalité 7 :
+
+var btnGrey = document.getElementsByClassName("btn btn-secondary my-2");
+var rowDiv = document.getElementsByClassName("row");
+var lastCard = document.getElementsByClassName(".card")[5];
+var FirstCard = document.getElementsByClassName(".card")[1];
+
+ 
+
+btnGrey[0].addEventListener("click", function(){
+rowDiv[0].insertBefore(lastCard, firstCard);
+
+});
